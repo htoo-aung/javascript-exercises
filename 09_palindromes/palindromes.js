@@ -12,9 +12,9 @@ const palindromes = function (str) {
         }
     });
 
-    const reverseFilteredArr = filteredArr.reverse();
+    const reverseFilteredArr = filteredArr.slice().reverse();
 
-    if (filteredArr === reverseFilteredArr) {
+    if (filteredArr.join('') === reverseFilteredArr.join('')) {
         return true;
     }
     else {
